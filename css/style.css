@@ -27,7 +27,7 @@
 body {
     padding: 0px;
     margin: 0px;
-    background-color: var(--backgroud);
+    background-color: #222222;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -37,6 +37,7 @@ main {
 }
 
 /* log in page start */
+
 .login_container {
     width: 100%;
     height: 100vh;
@@ -104,7 +105,7 @@ select:focus {
 }
 
 .btn {
-    background-color: var(--sigment_color);
+    background-color: var(--backgroud);
     color: var(--akcent);
     border-radius: 10px;
     width: 100%;
@@ -141,10 +142,12 @@ select:focus {
     .logotype p {
         font-size: 48px;
     }
-    .input_group input{
+
+    .input_group input {
         height: 20px;
     }
-    .btn{
+
+    .btn {
         height: 45px;
     }
 }
@@ -384,7 +387,7 @@ input[type="checkbox"]:before {
 
 .calendar_page {
     width: 100%;
-    height: auto;
+    height: 100vh;
     background-color: var(--backgroud);
     display: flex;
 }
@@ -493,7 +496,8 @@ aside nav ul li a:hover {
     justify-content: center;
     border-bottom: 1px solid white;
 }
-.w-50 .week_days{
+
+.w-50 .week_days {
     gap: 5.5%;
 }
 
@@ -702,7 +706,7 @@ aside nav ul li a:hover {
     padding: 30px;
     overflow-y: auto;
     background: var(--backgroud);
-    
+
     /* скрыта, но на правильной позиции */
     transition: transform 0.4s ease;
 }
@@ -790,54 +794,65 @@ aside nav ul li a:hover {
 }
 
 @media (max-width: 768px) {
-    .calendar_page{
+    .calendar_page {
         flex-direction: column;
         align-items: center;
     }
-    main aside{
+
+    main aside {
         width: 100%;
         height: 65px;
         border-radius: 0;
         z-index: 1000;
     }
-    aside nav ul{
+
+    aside nav ul {
         flex-direction: row;
-            
+
     }
-    aside nav ul{
+
+    aside nav ul {
         gap: 65px;
     }
-    .calendar{
+
+    .calendar {
         margin-left: 0;
         width: 90%;
         order: 3;
     }
-    .week_days{
+
+    .week_days {
         gap: 5%;
     }
-    .tasks{
+
+    .tasks {
         order: 1;
         width: 100%;
         margin-top: 65px;
     }
-    .w-50{
+
+    .w-50 {
         width: 100% !important;
     }
-    .create_task{
+
+    .create_task {
         position: relative;
         width: 100%;
         order: 2;
         height: auto;
     }
+
     .create_task.show {
-    position: fixed;
+        position: fixed;
     }
-    .calendar_table{
+
+    .calendar_table {
         padding: 0;
     }
 }
+
 @media (max-width:490px) {
-    .week_days{
+    .week_days {
         gap: 8%;
     }
 }
@@ -846,12 +861,13 @@ aside nav ul li a:hover {
 
 /* frined page start */
 
-.friends_page{
+.friends_page {
     width: 100%;
-    height: auto;
+    height: 100vh;
     background-color: var(--backgroud);
 }
-.friends_page section{
+
+.friends_page section {
     margin-left: 80px;
     width: 100%-80px;
     height: auto;
@@ -859,19 +875,22 @@ aside nav ul li a:hover {
     flex-direction: column;
     align-items: center;
 }
-.search_friend{
+
+.search_friend {
     width: 100%;
     height: auto;
     padding: 50px 0;
     display: flex;
     justify-content: center;
 }
-.search_friend form{
+
+.search_friend form {
     width: 80%;
     display: flex;
     gap: 20px;
 }
-.search_friend form input{
+
+.search_friend form input {
     width: 85%;
     border: 1px solid var(--sigment_color);
     background: none;
@@ -881,30 +900,34 @@ aside nav ul li a:hover {
     color: white;
     transition: all 0.3s ease;
 }
-.search_friend form input:focus{
+
+.search_friend form input:focus {
     outline: none;
     border-color: var(--akcent);
 }
-.search_friend form .btn{
+
+.search_friend form .btn {
     width: 10%;
     height: 45px;
     background-color: var(--akcent);
     color: var(--sigment_color);
     padding: 0;
 }
-.search_friend form .btn:hover{
+
+.search_friend form .btn:hover {
     background-color: var(--sigment_color);
     color: var(--akcent);
     border-color: var(--akcent);
 }
-.friend_list{
+
+.friend_list {
     width: 80%;
     display: flex;
     flex-direction: column;
     align-items: start;
 }
 
-.friend_list .title{
+.friend_list .title {
     width: 100%;
     font-size: 24px;
     color: white;
@@ -913,12 +936,12 @@ aside nav ul li a:hover {
     margin-bottom: 65px;
 }
 
-.friend_list .title span{
-   color: var(--akcent);
-   font-weight: 600;
+.friend_list .title span {
+    color: var(--akcent);
+    font-weight: 600;
 }
 
-.card_friend{
+.card_friend {
     display: flex;
     width: 100%;
     align-items: center;
@@ -929,11 +952,13 @@ aside nav ul li a:hover {
     gap: 30px;
     margin-bottom: 25px;
 }
-.card_friend p{
+
+.card_friend p {
     margin: 0;
     min-width: 80%;
 }
-.card_friend button{
+
+.card_friend button {
     text-decoration: none;
     color: white;
     width: 30px;
@@ -944,36 +969,41 @@ aside nav ul li a:hover {
     border: 0;
     transition: all 0.3s ease;
 }
-.card_friend button:hover{
+
+.card_friend button:hover {
 
     background-color: #b31c1c;
 
 }
 
 @media (max-width: 768px) {
-    .friends_page section{
+    .friends_page section {
         width: 100%;
         margin-left: 0;
-        padding: 65px 0 0 0 ;
+        padding: 65px 0 0 0;
     }
-    .card_friend p{
+
+    .card_friend p {
         min-width: 70%;
     }
-    .search_friend form .btn{
+
+    .search_friend form .btn {
         font-size: 14px;
         width: 25%;
     }
 }
 
 @media (max-width:659px) {
-     .card_friend p{
+    .card_friend p {
         min-width: 40%;
         font-size: 12px;
     }
-     .card_friend img{
+
+    .card_friend img {
         width: 15%;
     }
-     .card_friend img{
+
+    .card_friend img {
         width: 15%;
     }
 }
@@ -982,10 +1012,13 @@ aside nav ul li a:hover {
 
 /* notification_page start */
 
-.notification_page{
+.notification_page {
     width: 100%;
+    background-color: var(--backgroud);
+    height: 100vh;
 }
-.notification_page section{
+
+.notification_page section {
     width: 100%;
     /* margin-left: 80px; */
     height: auto;
@@ -994,7 +1027,8 @@ aside nav ul li a:hover {
     align-items: center;
     padding: 50px 15%;
 }
-.notification_page section .title{
+
+.notification_page section .title {
     width: 100%;
     color: white;
     height: 45px;
@@ -1003,46 +1037,97 @@ aside nav ul li a:hover {
     margin-bottom: 60px;
 }
 
-.notification_card{
+.notification_card {
     width: 100%;
-    display: flex;
+    display: block;
     margin-bottom: 25px;
     border: 1px solid var(--sigment_color);
     border-radius: 10px;
     cursor: pointer;
+    padding: 15px;
 }
-.right_block{
-    width: 80%;
-    color: white;
-    padding: 25px 30px;
-}
-.left_block{
-    width: 20%;
-    display: flex;
-  justify-content: end;
-    
-}
-.left_block button{
-    width: 50%;
-    border: 0;
-    color: white;
 
+.info {
+    width: 100%;
+    height: auto;
 }
-.add_friend{
+
+.info .descrption {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.button_group {
+    width: 100%;
+    display: flex;
+    height: auto;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.add_friend {
+    border-radius: 5px;
     background-color: #3FC84B;
-    display: none;
+    color: white;
+    border: 1px solid #3FC84B;
+    width: 100px;
+    height: 35px;
+    transition: all 0.3s ease;
 }
-.remove_friend{
-    border-radius:0 10px 10px 0;
+
+.remove_friend {
+    border: 1px solid #DC2727;
+    border-radius: 5px;
+    background: none;
+    width: 100px;
+    height: 35px;
+    color: #DC2727;
+    transition: all 0.3s ease;
+}
+.ready{
+    border-radius: 5px;
+    background-color: var(--akcent);
+    color: var(--sigment_color);
+    border: 1px solid var(--akcent);
+    width: 210px;
+    height: 35px;
+    transition: all 0.3s ease;
+}   
+.ready:hover{
+    background-color: var(--backgroud);
+    color: var(--akcent);
+}                 
+.add_friend:hover {
+    background-color: #30a139;
+    border-color: #30a139;
+}
+
+.remove_friend:hover {
     background-color: #DC2727;
-    display: none;
+    color: white;
 }
-.right_block .title_card{
+
+.notification_card .title_card {
     font-size: 18px;
     color: var(--akcent);
     margin-bottom: 30px;
 }
 
-.close_notification{
+.close_notification {
     background: none;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .notification_page section .title {
+        margin-top: 80px;
+    }
+
+    .descrption {
+        font-size: 10px;
+    }
+
 }

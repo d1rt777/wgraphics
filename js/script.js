@@ -117,19 +117,3 @@ if (closeCreateTaskFromButton) {
 
 
 
-// скрипт для открытия кнопок у карточки уведомлений
-
-const notificationCards = document.querySelectorAll('.notification_card');
-
-if (notificationCards.length > 0) {
-    notificationCards.forEach(card => {
-        card.addEventListener('click', function () {
-
-            const addBtn = this.querySelector('.add_friend');
-            const removeBtn = this.querySelector('.remove_friend');
-
-            if (addBtn) addBtn.style.display = 'block';
-            if (removeBtn) removeBtn.style.display = 'block';
-        });
-    });
-}
