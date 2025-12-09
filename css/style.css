@@ -141,6 +141,12 @@ select:focus {
     .logotype p {
         font-size: 48px;
     }
+    .input_group input{
+        height: 20px;
+    }
+    .btn{
+        height: 45px;
+    }
 }
 
 /* log in page end */
