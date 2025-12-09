@@ -27,7 +27,7 @@
 body {
     padding: 0px;
     margin: 0px;
-    background-color: #222222;
+    background-color: var(--backgroud);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -704,9 +704,7 @@ aside nav ul li a:hover {
     width: 32%;
     height: 100vh;
     padding: 30px;
-    overflow-y: auto;
     background: var(--backgroud);
-
     /* скрыта, но на правильной позиции */
     transition: transform 0.4s ease;
 }
