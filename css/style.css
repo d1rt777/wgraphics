@@ -925,6 +925,14 @@ aside nav ul li a:hover {
     align-items: start;
 }
 
+.friend_info{
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
 .friend_list .title {
     width: 100%;
     font-size: 24px;
@@ -1126,6 +1134,24 @@ aside nav ul li a:hover {
 
     .descrption {
         font-size: 10px;
+    }
+    .notification_card .button_group{
+        flex-direction: row;
+    }
+    .add_friend{
+        font-size: 10px;
+        width: 65px;
+        height: 30px;
+    }
+    .remove_friend{
+        font-size: 10px;
+        width: 65px;
+        height: 30px;
+    }
+    .ready{
+        font-size: 10px;
+        width: 100px;
+        height: 30px;
     }
 
 }
