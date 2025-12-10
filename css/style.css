@@ -83,7 +83,7 @@ main {
 }
 
 .input_group input,
-select {
+.input_group select {
     background: none;
     border: none;
     width: 100%;
@@ -95,7 +95,7 @@ select {
 }
 
 .input_group input,
-select:focus {
+.input_group select:focus {
     outline: none;
     border-color: var(--akcent);
 }
@@ -1155,4 +1155,107 @@ aside nav ul li a:hover {
         height: 30px;
     }
 
+}
+
+/* notification page end */
+
+/* settings page start */
+
+.settings_page {
+    width: 100%;
+    background-color: var(--backgroud);
+    height: 100vh;
+}
+
+.settings_page section {
+    width: 70%;
+    /* margin-left: 80px; */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 15%;
+    background-color: var(--backgroud);
+}
+
+
+.settings_page section .title {
+    width: 100%;
+    color: white;
+    height: 45px;
+    border-bottom: 1px solid var(--akcent);
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.profile_info form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.profile{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.profile_info{
+    width: 68%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.profile_info form .input_group{
+    gap: 30px;
+}
+
+.profile_info .button_group{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.update_graphics{
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.update_graphics:hover{
+    background-color: white;
+    color: var(--sigment_color);
+}
+.save{
+    background-color: var(--akcent);
+    color: var(--sigment_color);
+    padding: 10px 50px;
+    font-size: 16px;
+    border: 1px solid var(--akcent);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.save:hover{
+    background: none;
+    color: var(--akcent);
+}
+@media (max-width: 769px) {
+    .settings_page section .title {
+        margin-top: 80px;
+    }
+    .profile{
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    .profile_info{
+        width: 100%;
+    }
 }
