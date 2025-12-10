@@ -926,7 +926,7 @@ aside nav ul li a:hover {
     align-items: start;
 }
 
-.friend_info{
+.friend_info {
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -1091,7 +1091,8 @@ aside nav ul li a:hover {
     color: #DC2727;
     transition: all 0.3s ease;
 }
-.ready{
+
+.ready {
     border-radius: 5px;
     background-color: var(--akcent);
     color: var(--sigment_color);
@@ -1099,11 +1100,13 @@ aside nav ul li a:hover {
     width: 210px;
     height: 35px;
     transition: all 0.3s ease;
-}   
-.ready:hover{
+}
+
+.ready:hover {
     background-color: var(--backgroud);
     color: var(--akcent);
-}                 
+}
+
 .add_friend:hover {
     background-color: #30a139;
     border-color: #30a139;
@@ -1136,20 +1139,24 @@ aside nav ul li a:hover {
     .descrption {
         font-size: 10px;
     }
-    .notification_card .button_group{
+
+    .notification_card .button_group {
         flex-direction: row;
     }
-    .add_friend{
+
+    .add_friend {
         font-size: 10px;
         width: 65px;
         height: 30px;
     }
-    .remove_friend{
+
+    .remove_friend {
         font-size: 10px;
         width: 65px;
         height: 30px;
     }
-    .ready{
+
+    .ready {
         font-size: 10px;
         width: 100px;
         height: 30px;
@@ -1188,36 +1195,37 @@ aside nav ul li a:hover {
     margin-bottom: 40px;
 }
 
-.profile_info form{
+.profile_info form {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 35px;
 }
-.profile{
+
+.profile {
     width: 100%;
     height: auto;
     display: flex;
 }
 
-.profile_info{
+.profile_info {
     width: 68%;
     display: flex;
     flex-direction: column;
     gap: 35px;
 }
 
-.profile_info form .input_group{
+.profile_info form .input_group {
     gap: 30px;
 }
 
-.profile_info .button_group{
+.profile_info .button_group {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.update_graphics{
+.update_graphics {
     border: 1px solid white;
     border-radius: 10px;
     font-size: 18px;
@@ -1228,11 +1236,13 @@ aside nav ul li a:hover {
     text-align: center;
     transition: all 0.3s ease;
 }
-.update_graphics:hover{
+
+.update_graphics:hover {
     background-color: white;
     color: var(--sigment_color);
 }
-.save{
+
+.save {
     background-color: var(--akcent);
     color: var(--sigment_color);
     padding: 10px 50px;
@@ -1242,20 +1252,34 @@ aside nav ul li a:hover {
     transition: all 0.3s ease;
     cursor: pointer;
 }
-.save:hover{
+
+.save:hover {
     background: none;
     color: var(--akcent);
 }
-@media (max-width: 769px) {
+
+@media (max-width: 768px) {
     .settings_page section .title {
         margin-top: 80px;
     }
-    .profile{
+
+    .profile {
         flex-direction: column;
         align-items: center;
         gap: 50px;
     }
-    .profile_info{
+
+    .profile_info {
         width: 100%;
     }
+
+    .settings_page aside nav ul {
+        gap: 65px;
+        margin-top: 5px;
+    }
+
+    .settings_page aside nav ul li a {
+        padding: 5px 0;
+    }
+
 }
