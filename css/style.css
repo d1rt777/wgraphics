@@ -142,7 +142,7 @@ main {
 @media (max-width: 768px) {
 
     .login_container fieldset {
-        height: 35px;
+        height: 40px;
     }
 }
 
@@ -1342,26 +1342,6 @@ aside nav ul li a:hover {
 }
 
 
-/* адаптив */
-@media (max-width: 768px) {
-    .avatar_user img {
-        max-width: 180px;
-        height: 180px;
-        border-radius: 16px;
-    }
-
-    .avatar_btn,
-    .avatar_meta {
-        max-width: 180px;
-        height: 40px;
-    }
-
-    .avatar_meta {
-        gap: 6px;
-    }
-}
-
-
 @media (max-width: 768px) {
     .settings_page section .title {
         margin-top: 80px;
@@ -1386,4 +1366,21 @@ aside nav ul li a:hover {
         padding: 5px 0;
     }
 
+    .avatar_user img {
+        max-width: 180px;
+        height: 180px;
+    }
+
+    .avatar_btn,
+    .avatar_meta {
+        max-width: 180px;
+        height: 40px;
+    }
+
+    .avatar_meta {
+        gap: 6px;
+    }
+    .avatar_user{
+        width: 100%;
+    }
 }
