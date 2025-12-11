@@ -139,6 +139,13 @@ main {
     cursor: pointer;
 }
 
+@media (max-width: 768px) {
+
+    .login_container fieldset {
+        height: 35px;
+    }
+}
+
 @media (max-width: 480px) {
     .logotype p {
         font-size: 48px;
@@ -151,6 +158,8 @@ main {
     .btn {
         height: 45px;
     }
+
+
 }
 
 /* log in page end */
@@ -1257,6 +1266,101 @@ aside nav ul li a:hover {
     background: none;
     color: var(--akcent);
 }
+
+.settings_page aside nav ul {
+    gap: 41px;
+    margin-top: 5px;
+}
+
+/* === avatar update (settings) — исправленная версия === */
+
+.avatar_user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+/* изображение */
+.avatar_user img {
+    width: 100%;
+    max-width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 3px solid var(--sigment_color);
+    background-color: #1e1e1e;
+    object-fit: cover;
+    display: block;
+}
+
+.avatar_user form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* скрываем стандартный file input, но оставляем доступным */
+.avatar_user input[type="file"] {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* кнопка-лейбл в стиле проекта */
+.avatar_btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 220px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: var(--backgroud);
+    border: 1px solid var(--akcent);
+    color: var(--akcent);
+    font-size: 16px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: all 0.22s ease;
+    text-align: center;
+    user-select: none;
+}
+
+/* hover / active — в стиле проекта */
+.avatar_btn:hover {
+    background-color: var(--akcent);
+    color: var(--backgroud);
+    transform: translateY(-2px) scale(1.01);
+}
+
+.avatar_btn:active {
+    transform: translateY(1px);
+}
+
+
+/* адаптив */
+@media (max-width: 768px) {
+    .avatar_user img {
+        max-width: 180px;
+        height: 180px;
+        border-radius: 16px;
+    }
+
+    .avatar_btn,
+    .avatar_meta {
+        max-width: 180px;
+        height: 40px;
+    }
+
+    .avatar_meta {
+        gap: 6px;
+    }
+}
+
 
 @media (max-width: 768px) {
     .settings_page section .title {
