@@ -24,6 +24,12 @@
 Актуальная версия приложения доступна по ссылке:  
 👉 **[https://d1rt777.github.io/wgraphics/home](https://d1rt777.github.io/wgraphics/home)**
 
+Дизайн макет проекта:
+✏️ **https://www.figma.com/file/Cpbd5ysFrNYbIM4nRnwUcH?node-id=49-137&t=yUjcxHBedHvdiA5x-0&type=design&mode=design**
+
+ER-диаграмма базы данных:
+🗒 ****
+
 ## 🛠️ Технологический стек
 
 ### Frontend
