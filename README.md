@@ -28,7 +28,7 @@
 ✏️ **https://www.figma.com/file/Cpbd5ysFrNYbIM4nRnwUcH?node-id=49-137&t=yUjcxHBedHvdiA5x-0&type=design&mode=design**
 
 ER-диаграмма базы данных:
-🗒 ****
+🗒 **https://dbdiagram.io/d/66053aa5e6397f67c64d04a9**
 
 ## 🛠️ Технологический стек
 
