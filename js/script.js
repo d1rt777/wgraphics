@@ -117,3 +117,71 @@ if (closeCreateTaskFromButton) {
 
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    const avatarInput = document.getElementById('avatarInput');
+    const updateButton = document.getElementById('updateAvatar');
+    const avatarLabel = document.querySelector('label[for="avatarInput"]');
+    
+    // Изначально скрываем кнопку обновления
+    if (updateButton) {
+        updateButton.style.display = 'none';
+    }
+    
+    // Обработчик изменения файла в инпуте
+    if (avatarInput) {
+        avatarInput.addEventListener('change', function() {
+            if (this.files && this.files.length > 0) {
+                // Получаем имя файла
+                const fileName = this.files[0].name;
+                
+                // Обновляем текст в label и меняем классы
+                if (avatarLabel) {
+                    avatarLabel.textContent = fileName;
+                    // Удаляем класс avatar_btn и добавляем avatar_filename
+                    avatarLabel.classList.remove('avatar_btn');
+                    avatarLabel.classList.add('avatar_filename');
+                }
+                
+                // Показываем кнопку обновления
+                if (updateButton) {
+                    updateButton.style.display = 'block';
+                }
+            } else {
+                // Если файл не выбран, возвращаем исходное состояние
+                if (avatarLabel) {
+                    avatarLabel.textContent = 'Загрузить новое фото';
+                    // Возвращаем исходные классы
+                    avatarLabel.classList.remove('avatar_filename');
+                    avatarLabel.classList.add('avatar_btn');
+                }
+                if (updateButton) {
+                    updateButton.style.display = 'none';
+                }
+            }
+        });
+    }
+    
+    // Обработчик для кнопки обновления
+    if (updateButton) {
+        updateButton.addEventListener('click', function() {
+            if (avatarInput.files && avatarInput.files.length > 0) {
+                const file = avatarInput.files[0];
+                
+                // Здесь можно добавить логику загрузки файла на сервер
+                console.log('Загружаем файл:', file.name);
+                alert(`Файл "${file.name}" будет загружен на сервер`);
+                
+                // После успешной загрузки можно сбросить форму
+                // document.querySelector('.avatar_form').reset();
+                // updateButton.style.display = 'none';
+                // if (avatarLabel) {
+                //     avatarLabel.textContent = 'Загрузить новое фото';
+                //     avatarLabel.classList.remove('avatar_filename');
+                //     avatarLabel.classList.add('avatar_btn');
+                // }
+            } else {
+                alert('Пожалуйста, выберите файл');
+            }
+        });
+    }
+});

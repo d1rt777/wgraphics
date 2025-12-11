@@ -1296,8 +1296,17 @@ aside nav ul li a:hover {
 .avatar_user form {
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
+.avatar_user form .btn {
+    width: 70%;
+    font-size: 14px;
+}
+/* #updateAvatar{
+    display: none;
+} */
 
 /* скрываем стандартный file input, но оставляем доступным */
 .avatar_user input[type="file"] {
@@ -1320,7 +1329,7 @@ aside nav ul li a:hover {
     height: 35px;
     border-radius: 10px;
     background-color: var(--backgroud);
-    border: 1px solid var(--akcent);
+    /* border: 1px solid var(--akcent); */
     color: var(--akcent);
     font-size: 16px;
     padding: 8px 16px;
@@ -1328,12 +1337,13 @@ aside nav ul li a:hover {
     transition: all 0.22s ease;
     text-align: center;
     user-select: none;
+    text-overflow: ellipsis;
 }
 
 /* hover / active — в стиле проекта */
 .avatar_btn:hover {
-    background-color: var(--akcent);
-    color: var(--backgroud);
+    border: 1px solid var(--akcent);
+    color: var(--akcent);
     transform: translateY(-2px) scale(1.01);
 }
 
@@ -1341,6 +1351,13 @@ aside nav ul li a:hover {
     transform: translateY(1px);
 }
 
+.avatar_filename {
+    color: var(--akcent);
+    white-space: normal; /* Разрешаем перенос */
+    word-wrap: break-word; /* Перенос длинных слов */
+    word-break: break-all; /* Разрыв длинных слов */
+    max-width: 200px;
+}
 
 @media (max-width: 768px) {
     .settings_page section .title {
