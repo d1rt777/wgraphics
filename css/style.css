@@ -24,6 +24,45 @@
     width: 32%;
 }
 
+@keyframes open_right {
+    from {
+        margin-left: 0px;
+        opacity: 0;
+    }
+
+    to {
+        margin-left: 80px;
+        opacity: 1;
+    }
+
+}
+
+@keyframes open_down {
+    from {
+        margin-top: 50px;
+        opacity: 0;
+    }
+
+    to {
+        margin-top: 0px;
+        opacity: 1;
+    }
+
+}
+@keyframes open_right {
+    from {
+        margin-right: -50px;
+        opacity: 0;
+    }
+
+    to {
+        margin-right: 0px;
+        opacity: 1;
+    }
+
+}
+
+
 body {
     padding: 0px;
     margin: 0px;
@@ -408,6 +447,7 @@ main aside {
     background-color: #222222;
     border-radius: 0 0 50px 0;
     position: fixed;
+    z-index: 999;
 }
 
 aside nav ul li {
@@ -460,6 +500,9 @@ aside nav ul li a:hover {
     margin-left: 80px;
     height: 100%;
     background-color: var(--backgroud);
+    animation-duration: 1s;
+    animation-name: open_right;
+
 }
 
 
@@ -470,6 +513,10 @@ aside nav ul li a:hover {
     align-items: center;
     height: auto;
     background-color: var(--sigment_color);
+    /* animation-duration: 2s;
+    animation-name: open_down; */
+
+
 }
 
 .calendar_head {
@@ -717,6 +764,8 @@ aside nav ul li a:hover {
     background: var(--backgroud);
     /* скрыта, но на правильной позиции */
     transition: transform 0.4s ease;
+    animation-duration: 2s;
+    animation-name: open_right;
 }
 
 .create_task.show {
@@ -805,6 +854,7 @@ aside nav ul li a:hover {
     .calendar_page {
         flex-direction: column;
         align-items: center;
+        height: 100%;
     }
 
     main aside {
@@ -827,6 +877,8 @@ aside nav ul li a:hover {
         margin-left: 0;
         width: 90%;
         order: 3;
+        animation-duration: 2s;
+        animation-name: open_down;
     }
 
     .week_days {
@@ -967,6 +1019,8 @@ aside nav ul li a:hover {
     height: 65px;
     gap: 30px;
     margin-bottom: 25px;
+    animation-duration: 2s;
+    animation-name: open_down;
 }
 
 .card_friend p {
@@ -1061,6 +1115,8 @@ aside nav ul li a:hover {
     border-radius: 10px;
     cursor: pointer;
     padding: 15px;
+    animation-duration: 2s;
+    animation-name: open_down;
 }
 
 .info {
@@ -1222,6 +1278,8 @@ aside nav ul li a:hover {
     display: flex;
     flex-direction: column;
     gap: 35px;
+    animation-duration: 2s;
+    animation-name: open_down;
 }
 
 .profile_info form .input_group {
@@ -1300,10 +1358,12 @@ aside nav ul li a:hover {
     align-items: center;
     gap: 20px;
 }
+
 .avatar_user form .btn {
     width: 70%;
     font-size: 14px;
 }
+
 /* #updateAvatar{
     display: none;
 } */
@@ -1353,9 +1413,12 @@ aside nav ul li a:hover {
 
 .avatar_filename {
     color: var(--akcent);
-    white-space: normal; /* Разрешаем перенос */
-    word-wrap: break-word; /* Перенос длинных слов */
-    word-break: break-all; /* Разрыв длинных слов */
+    white-space: normal;
+    /* Разрешаем перенос */
+    word-wrap: break-word;
+    /* Перенос длинных слов */
+    word-break: break-all;
+    /* Разрыв длинных слов */
     max-width: 200px;
 }
 
@@ -1397,7 +1460,8 @@ aside nav ul li a:hover {
     .avatar_meta {
         gap: 6px;
     }
-    .avatar_user{
+
+    .avatar_user {
         width: 100%;
     }
 }
