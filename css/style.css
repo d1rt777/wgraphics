@@ -436,7 +436,7 @@ input[type="checkbox"]:before {
 
 .calendar_page {
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     background-color: var(--backgroud);
     display: flex;
 }
