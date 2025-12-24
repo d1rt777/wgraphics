@@ -190,15 +190,16 @@ let taskList = document.querySelector('.tasks_list');
 
 const btnCreateTask = document.getElementById('addTaskInFrom')
 
-btnCreateTask.addEventListener('click', (e) => {
-    e.preventDefault()
+if (btnCreateTask) {
+    btnCreateTask.addEventListener('click', (e) => {
+        e.preventDefault()
 
-    let taskValue = document.querySelector('.zalupa').value
+        let taskValue = document.querySelector('.zalupa').value
 
-    console.log(typeof(taskValue));
-    
+        console.log(typeof (taskValue));
 
-    taskList.insertAdjacentHTML('beforeend', `
+
+        taskList.insertAdjacentHTML('beforeend', `
                 <label class="task">
                     <input type="checkbox">
                     <span class="ircle"></span>
@@ -206,4 +207,46 @@ btnCreateTask.addEventListener('click', (e) => {
                 </label>
 
         `)
-})
+    })
+}
+
+
+
+/* =========================
+   THEME SWITCHER
+   ========================= */
+
+document.addEventListener('DOMContentLoaded', () => {
+    const themeToggleBtn = document.getElementById('themeToggle');
+    const root = document.documentElement;
+    const STORAGE_KEY = 'theme';
+
+    // Загружаем сохранённую тему
+    const savedTheme = localStorage.getItem(STORAGE_KEY);
+
+    if (savedTheme) {
+        root.setAttribute('data-theme', savedTheme);
+        updateThemeIcon(savedTheme);
+    } else {
+        // тема по умолчанию — dark
+        root.setAttribute('data-theme', 'dark');
+        updateThemeIcon('dark');
+    }
+
+    // Переключение по клику
+    if (themeToggleBtn) {
+        themeToggleBtn.addEventListener('click', () => {
+            const currentTheme = root.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+
+            root.setAttribute('data-theme', newTheme);
+            localStorage.setItem(STORAGE_KEY, newTheme);
+            updateThemeIcon(newTheme);
+        });
+    }
+
+    function updateThemeIcon(theme) {
+        if (!themeToggleBtn) return;
+        themeToggleBtn.textContent = theme === 'light' ? '🌙' : '☀️';
+    }
+});

@@ -511,7 +511,7 @@ aside nav ul li a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: auto;
+    height: 100vh;
     background-color: var(--sigment_color);
     /* animation-duration: 2s;
     animation-name: open_down; */
@@ -888,6 +888,7 @@ aside nav ul li a:hover {
     .tasks {
         order: 1;
         width: 100%;
+        height: auto;
         margin-top: 65px;
     }
 
@@ -1464,4 +1465,210 @@ aside nav ul li a:hover {
     .avatar_user {
         width: 100%;
     }
+}
+/* =========================
+   LIGHT THEME FIXES
+   ========================= */
+
+/* Правильное применение светлой темы через атрибут data-theme */
+html[data-theme="light"] {
+    /* Обновляем переменные для светлой темы */
+    --backgroud: #f5f6f8;
+    --sigment_color: #e4e6eb;
+    --akcent: #ffbe1b;
+    --text-main: #1e1e1e;
+    --text-secondary: #555555;
+    --border-color: #d0d0d0;
+}
+
+/* Основные стили для светлой темы */
+html[data-theme="light"] body {
+    background-color: var(--backgroud);
+    color: var(--text-main);
+}
+
+/* === Исправление инвертированного календаря === */
+html[data-theme="light"] ::-webkit-calendar-picker-indicator {
+    filter: invert(0);
+}
+
+/* === Текст === */
+html[data-theme="light"] .logotype p,
+html[data-theme="light"] .logotype p span,
+html[data-theme="light"] .title_busy_day p,
+html[data-theme="light"] .clue p,
+html[data-theme="light"] .calendar_head,
+html[data-theme="light"] .week_days,
+html[data-theme="light"] .card_friend p,
+html[data-theme="light"] .notification_page section .title,
+html[data-theme="light"] .descrption,
+html[data-theme="light"] .title_card,
+html[data-theme="light"] .busy_day_list_element,
+html[data-theme="light"] .personal_data,
+html[data-theme="light"] .link_create_account,
+html[data-theme="light"] .link_create_account span,
+html[data-theme="light"] .clue ul .ul_item li,
+html[data-theme="light"] .task .text,
+html[data-theme="light"] .friend_list .title,
+html[data-theme="light"] .search_friend form input,
+html[data-theme="light"] .create_task_head p,
+html[data-theme="light"] .create_task_body form textarea {
+    color: var(--text-main);
+}
+
+/* === Формы и инпуты === */
+html[data-theme="light"] .input_group input,
+html[data-theme="light"] .input_group select,
+html[data-theme="light"] .search_friend form input,
+html[data-theme="light"] .create_task_body form textarea {
+    color: var(--text-main);
+    background-color: transparent;
+}
+
+html[data-theme="light"] .input_group legend {
+    color: var(--text-main);
+}
+
+html[data-theme="light"] .input_group fieldset {
+    border-color: var(--border-color);
+}
+
+html[data-theme="light"] .input_group input:focus,
+html[data-theme="light"] .input_group select:focus,
+html[data-theme="light"] .search_friend form input:focus,
+html[data-theme="light"] .create_task_body form textarea:focus {
+    border-color: var(--akcent);
+}
+
+/* === Кнопки === */
+html[data-theme="light"] .btn {
+    background-color: white;
+    color: var(--text-main);
+    border-color: var(--border-color);
+}
+
+html[data-theme="light"] .btn:hover {
+    background-color: var(--akcent);
+    color: var(--text-main);
+    border-color: var(--akcent);
+}
+
+/* Блоки и контейнеры */
+html[data-theme="light"] .login_container,
+html[data-theme="light"] .registration_container,
+html[data-theme="light"] .add_work,
+html[data-theme="light"] .calendar,
+html[data-theme="light"] .calendar_table table td,
+html[data-theme="light"] .tasks,
+html[data-theme="light"] .create_task,
+html[data-theme="light"] .notification_card,
+html[data-theme="light"] .friends_page,
+html[data-theme="light"] .notification_page,
+html[data-theme="light"] .settings_page,
+html[data-theme="light"] .settings_page section,
+html[data-theme="light"] .profile_info {
+    background-color: var(--backgroud);
+}
+
+/* Календарь */
+html[data-theme="light"] .calendar_table table td {
+    background-color: white;
+    color: var(--text-main);
+    border: 1px solid var(--border-color);
+}
+
+html[data-theme="light"] .calendar_table table td:hover {
+    background-color: var(--sigment_color);
+}
+
+/* Чекбоксы */
+html[data-theme="light"] .registration_container .input_group input[type='checkbox'],
+html[data-theme="light"] .input_group .personal_data input[type='checkbox'] {
+    background-color: white;
+    border-color: var(--border-color);
+}
+
+/* Боковое меню */
+html[data-theme="light"] main aside {
+    background-color: white;
+}
+
+html[data-theme="light"] aside nav ul li a {
+    color: var(--text-secondary);
+}
+
+html[data-theme="light"] aside nav ul li a:hover,
+html[data-theme="light"] aside nav ul li a.active {
+    color: var(--akcent);
+}
+
+/* Границы и разделители */
+html[data-theme="light"] .week_days,
+html[data-theme="light"] .task_title,
+html[data-theme="light"] .friend_list .title,
+html[data-theme="light"] .notification_page section .title,
+html[data-theme="light"] .settings_page section .title {
+    border-color: var(--border-color);
+}
+
+/* Аватар */
+html[data-theme="light"] .avatar_user img {
+    border-color: var(--border-color);
+}
+
+/* === Дополнительные фиксы === */
+
+/* Задачи */
+html[data-theme="light"] .task .circle {
+    border-color: var(--text-main);
+}
+
+/* Кнопки с акцентом */
+html[data-theme="light"] .button_group .add_form {
+    background-color: var(--akcent);
+    color: var(--backgroud);
+    border-color: var(--text-main);
+}
+
+html[data-theme="light"] .button_group .add_form:hover {
+    background-color: var(--backgroud);
+    color: var(--text-main);
+}
+
+/* Кнопка добавления задачи */
+html[data-theme="light"] .add_task {
+    background-color: var(--akcent);
+    color: var(--text-main);
+}
+
+/* === Медиа-запросы для светлой темы === */
+@media (max-width: 768px) {
+    html[data-theme="light"] main aside {
+        background-color: white;
+        border-bottom: 1px solid var(--border-color);
+    }
+}
+
+/* Исправление для переключателя темы */
+.theme-toggle {
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: none;
+    /* background: var(--akcent); */
+    /* color: var(--backgroud); */
+    border: 2px solid var(--akcent);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
 }
