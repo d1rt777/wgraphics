@@ -454,6 +454,7 @@ aside nav ul li {
     list-style-type: none;
 }
 
+
 aside nav {
     width: 100%;
     height: 100%;
@@ -541,8 +542,18 @@ aside nav ul li a:hover {
     transition: 0.3s ease;
 }
 
-.calendar_head button:hover {
-    transform: translateY(-2px) scale(1.02);
+.back{
+    rotate: -90deg;
+}
+.next{
+    rotate: 90deg;
+}
+
+.back:hover {
+    transform: translateX(2px) scale(1.02);
+}
+.next:hover {
+    transform: translateX(-2px) scale(1.02);
 }
 
 .week_days {
@@ -1255,10 +1266,13 @@ aside nav ul li a:hover {
 .settings_page section .title {
     width: 100%;
     color: white;
-    height: 45px;
+    height: 65px;
     border-bottom: 1px solid var(--akcent);
     font-size: 24px;
     margin-bottom: 40px;
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
 
 .profile_info form {
@@ -1542,14 +1556,14 @@ html[data-theme="light"] .create_task_body form textarea:focus {
 
 /* === Кнопки === */
 html[data-theme="light"] .btn {
-    background-color: white;
-    color: var(--text-main);
-    border-color: var(--border-color);
+    background-color: var(--akcent);
+    color: white;
+    border-color: var(--akcent);
 }
 
 html[data-theme="light"] .btn:hover {
-    background-color: var(--akcent);
-    color: var(--text-main);
+    background-color: none;
+    color: var(--akcent);
     border-color: var(--akcent);
 }
 
@@ -1575,6 +1589,13 @@ html[data-theme="light"] .calendar_table table td {
     background-color: white;
     color: var(--text-main);
     border: 1px solid var(--border-color);
+}
+html[data-theme="light"] .task_title {
+    color: var(--text-main);
+}
+html[data-theme="light"] .tasks {
+    background-color: #ededed;
+    height: auto;
 }
 
 html[data-theme="light"] .calendar_table table td:hover {
@@ -1640,6 +1661,22 @@ html[data-theme="light"] .add_task {
     background-color: var(--akcent);
     color: var(--text-main);
 }
+html[data-theme="light"] .update_graphics {
+    border-color: #222222;
+    color: #222222;
+}
+html[data-theme="light"] .update_graphics:hover {
+    background-color: #222222;
+    border-color: #222222;
+    color: #ffffff;
+}
+html[data-theme="light"] .search_friend form .btn {
+    border-color: var(--akcent);
+}
+html[data-theme="light"] .search_friend form .btn:hover {
+    background: none;
+    color: var(--akcent);
+}
 
 /* === Медиа-запросы для светлой темы === */
 @media (max-width: 768px) {
@@ -1660,6 +1697,7 @@ html[data-theme="light"] .add_task {
     background: none;
     /* background: var(--akcent); */
     /* color: var(--backgroud); */
+    color: var(--akcent);
     border: 2px solid var(--akcent);
     cursor: pointer;
     display: flex;
