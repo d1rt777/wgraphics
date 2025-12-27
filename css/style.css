@@ -1059,7 +1059,7 @@ aside nav ul li a:hover {
 @media (max-width: 768px) {
     .friends_page section {
         width: 100%;
-        height: auto;
+        height: 100%;
         margin-left: 0;
         padding: 65px 0 0 0;
     }
@@ -1074,7 +1074,7 @@ aside nav ul li a:hover {
     }
 
     .friends_page{
-        height: auto;
+        height: 100vh;
     }
 }
 
@@ -1724,11 +1724,6 @@ html[data-theme="light"] .settings_page section .title {
     transform: scale(1.1);
 }
 .settings_page,
-.friends_page,
-.notification_page {
+.friends_page{
     min-height: 100svh;
-}
-main.friends_page {
-    height: auto;
-    background-color: var(--backgroud);
 }
