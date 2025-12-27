@@ -1733,3 +1733,9 @@ html[data-theme="light"] .settings_page section .title {
 .theme-toggle:hover {
     transform: scale(1.1);
 }
+.friends_page,
+.notification_page,
+.settings_page {
+    min-height: 100vh;
+    height: auto;
+}
