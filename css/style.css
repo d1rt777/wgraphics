@@ -49,9 +49,7 @@
 
 }
 
-html, body {
-    height: 100%;
-}
+
 
 
 body {
@@ -59,6 +57,7 @@ body {
     margin: 0px;
     /* background-color: var(--backgroud); */
     background-color: #222222;
+    min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -1730,6 +1729,6 @@ html[data-theme="light"] .settings_page section .title {
     min-height: 100svh;
 }
 main.friends_page {
-    min-height: 100vh;
+    height: auto;
     background-color: var(--backgroud);
 }
