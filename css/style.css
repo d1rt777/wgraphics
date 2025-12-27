@@ -1709,7 +1709,6 @@ html[data-theme="light"] .settings_page section .title {
 .theme-toggle {
     top: 20px;
     right: 20px;
-    z-index: 1001;
     width: 50px;
     height: 50px;
     border-radius: 50%;
