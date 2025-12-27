@@ -950,7 +950,7 @@ aside nav ul li a:hover {
 .friends_page section {
     margin-left: 80px;
     width: 100%-80px;
-    height: auto;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1069,6 +1069,7 @@ aside nav ul li a:hover {
 @media (max-width: 768px) {
     .friends_page section {
         width: 100%;
+        height: 100vh;
         margin-left: 0;
         padding: 65px 0 0 0;
     }
@@ -1080,6 +1081,10 @@ aside nav ul li a:hover {
     .search_friend form .btn {
         font-size: 14px;
         width: 25%;
+    }
+
+    .friends_page{
+        height: auto;
     }
 }
 
