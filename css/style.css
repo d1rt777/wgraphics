@@ -117,6 +117,8 @@ main {
 }
 
 .input_group fieldset {
+    height: 45px;
+    padding: 0 15px 20px;
     border-radius: 10px;
     border: 3px solid var(--sigment_color);
 }
@@ -540,6 +542,7 @@ aside nav ul li a:hover {
     border: 0px;
     background: none;
     transition: 0.3s ease;
+    color: white;
 }
 
 .back{
@@ -642,7 +645,12 @@ aside nav ul li a:hover {
     gap: 10px;
     margin-bottom: 50px;
 }
-
+.ttle_clue  {
+   color: white
+}
+.black_arrow{
+    display: none;
+}
 .ttle_clue img {
     rotate: 90deg;
 }
@@ -1595,7 +1603,6 @@ html[data-theme="light"] .task_title {
 }
 html[data-theme="light"] .tasks {
     background-color: #ededed;
-    height: auto;
 }
 
 html[data-theme="light"] .calendar_table table td:hover {
@@ -1676,6 +1683,18 @@ html[data-theme="light"] .search_friend form .btn {
 html[data-theme="light"] .search_friend form .btn:hover {
     background: none;
     color: var(--akcent);
+}
+html[data-theme="light"] .calendar_head button {
+   color: var(--text-main);
+}
+html[data-theme="light"] .black_arrow {
+   display: block;
+}
+html[data-theme="light"] .white_arrow {
+   display: none;
+}
+html[data-theme="light"] .settings_page section .title {
+   color: var(--text-main);
 }
 
 /* === Медиа-запросы для светлой темы === */
