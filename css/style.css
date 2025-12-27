@@ -1729,3 +1729,7 @@ html[data-theme="light"] .settings_page section .title {
 .notification_page {
     min-height: 100svh;
 }
+main.friends_page {
+    min-height: 100vh;
+    background-color: var(--backgroud);
+}
