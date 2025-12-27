@@ -24,19 +24,6 @@
     width: 32%;
 }
 
-@keyframes open_right {
-    from {
-        margin-left: 0px;
-        opacity: 0;
-    }
-
-    to {
-        margin-left: 80px;
-        opacity: 1;
-    }
-
-}
-
 @keyframes open_down {
     from {
         margin-top: 50px;
@@ -1736,6 +1723,5 @@ html[data-theme="light"] .settings_page section .title {
 .friends_page,
 .notification_page,
 .settings_page {
-    min-height: 100vh;
-    height: auto;
+    min-height: 100svh;
 }
