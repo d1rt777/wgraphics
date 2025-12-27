@@ -56,6 +56,7 @@ body {
     /* background-color: var(--backgroud); */
     background-color: #222222;
     font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: env(safe-area-inset-bottom);
 }
 
 main {
@@ -1720,8 +1721,8 @@ html[data-theme="light"] .settings_page section .title {
 .theme-toggle:hover {
     transform: scale(1.1);
 }
+.settings_page,
 .friends_page,
-.notification_page,
-.settings_page {
+.notification_page {
     min-height: 100svh;
 }
