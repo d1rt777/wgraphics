@@ -1723,3 +1723,223 @@ html[data-theme="light"] .settings_page section .title {
 .theme-toggle:hover {
     transform: scale(1.1);
 }
+
+
+/* =========================
+   ТЁМНАЯ ТЕМА
+   ========================= */
+
+/* Переменные тёмной темы */
+html[data-theme="dark"] {
+    --backgroud: #0f1115;
+    --sigment_color: #1e222b;
+    --akcent: #ffbe1b;
+    --text-main: #f1f1f1;
+    --text-secondary: #9aa0a6;
+    --border-color: #2a2f3a;
+}
+
+/* Основные стили */
+html[data-theme="dark"] body {
+    background-color: var(--backgroud);
+    color: var(--text-main);
+}
+
+/* === Календарь (иконка даты) === */
+html[data-theme="dark"] ::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+/* === Текст === */
+html[data-theme="dark"] .logotype p,
+html[data-theme="dark"] .logotype p span,
+html[data-theme="dark"] .title_busy_day p,
+html[data-theme="dark"] .clue p,
+html[data-theme="dark"] .calendar_head,
+html[data-theme="dark"] .week_days,
+html[data-theme="dark"] .card_friend p,
+html[data-theme="dark"] .notification_page section .title,
+html[data-theme="dark"] .descrption,
+html[data-theme="dark"] .title_card,
+html[data-theme="dark"] .busy_day_list_element,
+html[data-theme="dark"] .personal_data,
+html[data-theme="dark"] .link_create_account,
+html[data-theme="dark"] .link_create_account span,
+html[data-theme="dark"] .clue ul .ul_item li,
+html[data-theme="dark"] .task .text,
+html[data-theme="dark"] .friend_list .title,
+html[data-theme="dark"] .search_friend form input,
+html[data-theme="dark"] .create_task_head p,
+html[data-theme="dark"] .create_task_body form textarea {
+    color: var(--text-main);
+}
+
+/* === Формы и инпуты === */
+html[data-theme="dark"] .input_group input,
+html[data-theme="dark"] .input_group select,
+html[data-theme="dark"] .search_friend form input,
+html[data-theme="dark"] .create_task_body form textarea {
+    color: var(--text-main);
+    background-color: transparent;
+}
+
+html[data-theme="dark"] .input_group legend {
+    color: var(--text-secondary);
+}
+
+html[data-theme="dark"] .input_group fieldset {
+    border-color: var(--border-color);
+}
+
+html[data-theme="dark"] .input_group input:focus,
+html[data-theme="dark"] .input_group select:focus,
+html[data-theme="dark"] .search_friend form input:focus,
+html[data-theme="dark"] .create_task_body form textarea:focus {
+    border-color: var(--akcent);
+}
+
+/* === Кнопки === */
+html[data-theme="dark"] .btn {
+    background-color: var(--akcent);
+    color: #000;
+    border-color: var(--akcent);
+}
+
+html[data-theme="dark"] .btn:hover {
+    background-color: transparent;
+    color: var(--akcent);
+}
+
+/* === Блоки и контейнеры ===
+html[data-theme="dark"] .login_container,
+html[data-theme="dark"] .registration_container,
+html[data-theme="dark"] .add_work,
+html[data-theme="dark"] .calendar,
+html[data-theme="dark"] .calendar_table table td,
+html[data-theme="dark"] .tasks,
+html[data-theme="dark"] .create_task,
+html[data-theme="dark"] .notification_card,
+html[data-theme="dark"] .friends_page,
+html[data-theme="dark"] .notification_page,
+html[data-theme="dark"] .settings_page,
+html[data-theme="dark"] .settings_page section,
+html[data-theme="dark"] .profile_info {
+    background-color: var(--sigment_color);
+} */
+
+/* === Календарь === */
+html[data-theme="dark"] .calendar_table table td {
+    background-color: #161a22;
+    color: var(--text-main);
+    border: 1px solid var(--border-color);
+}
+
+html[data-theme="dark"] .tasks {
+    background-color: #141822;
+}
+
+html[data-theme="dark"] .calendar_table table td:hover {
+    background-color: var(--sigment_color);
+}
+
+html[data-theme="dark"] .task_title {
+    color: var(--text-main);
+}
+
+/* === Чекбоксы === */
+html[data-theme="dark"] .registration_container .input_group input[type='checkbox'],
+html[data-theme="dark"] .input_group .personal_data input[type='checkbox'] {
+    background-color: #161a22;
+    border-color: var(--border-color);
+}
+
+/* === Боковое меню === */
+html[data-theme="dark"] main aside {
+    background-color: #161a22;
+}
+
+html[data-theme="dark"] aside nav ul li a {
+    color: var(--text-secondary);
+}
+
+html[data-theme="dark"] aside nav ul li a:hover,
+html[data-theme="dark"] aside nav ul li a.active {
+    color: var(--akcent);
+}
+
+/* === Границы === */
+html[data-theme="dark"] .week_days,
+html[data-theme="dark"] .task_title,
+html[data-theme="dark"] .friend_list .title,
+html[data-theme="dark"] .notification_page section .title,
+html[data-theme="dark"] .settings_page section .title {
+    border-color: var(--border-color);
+}
+
+/* === Аватар === */
+html[data-theme="dark"] .avatar_user img {
+    border-color: var(--border-color);
+}
+
+/* === Задачи === */
+html[data-theme="dark"] .task .circle {
+    border-color: var(--text-main);
+}
+
+/* === Кнопки с акцентом === */
+html[data-theme="dark"] .button_group .add_form {
+    background-color: var(--akcent);
+    color: #000;
+    border-color: var(--akcent);
+}
+
+html[data-theme="dark"] .button_group .add_form:hover {
+    background-color: transparent;
+    color: var(--akcent);
+}
+
+/* === Кнопка добавления задачи === */
+html[data-theme="dark"] .add_task {
+    background-color: var(--akcent);
+    color: #000;
+}
+
+/* === Кнопка обновления графика === */
+html[data-theme="dark"] .update_graphics {
+    border-color: var(--text-main);
+    color: var(--text-main);
+}
+
+html[data-theme="dark"] .update_graphics:hover {
+    background-color: var(--text-main);
+    color: #000;
+}
+
+/* === Поиск друзей === */
+html[data-theme="dark"] .search_friend form .btn {
+    border-color: var(--akcent);
+}
+
+html[data-theme="dark"] .search_friend form .btn:hover {
+    background: none;
+    color: var(--akcent);
+}
+
+/* === Навигация календаря === */
+html[data-theme="dark"] .calendar_head button {
+   color: var(--text-main);
+}
+
+/* === Стрелки === */
+html[data-theme="dark"] .black_arrow {
+   display: none;
+}
+
+html[data-theme="dark"] .white_arrow {
+   display: block;
+}
+
+/* === Заголовки настроек === */
+html[data-theme="dark"] .settings_page section .title {
+   color: var(--text-main);
+}
