@@ -1828,118 +1828,118 @@ html[data-theme="dark"] .profile_info {
 } */
 
 /* === Календарь === */
-html[data-theme="dark"] .calendar_table table td {
+.calendar_table table td {
     background-color: #161a22;
     color: var(--text-main);
     border: 1px solid var(--border-color);
 }
 
-html[data-theme="dark"] .tasks {
+ .tasks {
     background-color: #141822;
 }
 
-html[data-theme="dark"] .calendar_table table td:hover {
+ .calendar_table table td:hover {
     background-color: var(--sigment_color);
 }
 
-html[data-theme="dark"] .task_title {
+ .task_title {
     color: var(--text-main);
 }
 
 /* === Чекбоксы === */
-html[data-theme="dark"] .registration_container .input_group input[type='checkbox'],
-html[data-theme="dark"] .input_group .personal_data input[type='checkbox'] {
+ .registration_container .input_group input[type='checkbox'],
+ .input_group .personal_data input[type='checkbox'] {
     background-color: #161a22;
     border-color: var(--border-color);
 }
 
 /* === Боковое меню === */
-html[data-theme="dark"] main aside {
+ main aside {
     background-color: #161a22;
 }
 
-html[data-theme="dark"] aside nav ul li a {
+ aside nav ul li a {
     color: var(--text-secondary);
 }
 
-html[data-theme="dark"] aside nav ul li a:hover,
-html[data-theme="dark"] aside nav ul li a.active {
+ aside nav ul li a:hover,
+ aside nav ul li a.active {
     color: var(--akcent);
 }
 
 /* === Границы === */
-html[data-theme="dark"] .week_days,
-html[data-theme="dark"] .task_title,
-html[data-theme="dark"] .friend_list .title,
-html[data-theme="dark"] .notification_page section .title,
-html[data-theme="dark"] .settings_page section .title {
+ .week_days,
+ .task_title,
+ .friend_list .title,
+ .notification_page section .title,
+ .settings_page section .title {
     border-color: var(--border-color);
 }
 
 /* === Аватар === */
-html[data-theme="dark"] .avatar_user img {
+ .avatar_user img {
     border-color: var(--border-color);
 }
 
 /* === Задачи === */
-html[data-theme="dark"] .task .circle {
+ .task .circle {
     border-color: var(--text-main);
 }
 
 /* === Кнопки с акцентом === */
-html[data-theme="dark"] .button_group .add_form {
+ .button_group .add_form {
     background-color: var(--akcent);
     color: #000;
     border-color: var(--akcent);
 }
 
-html[data-theme="dark"] .button_group .add_form:hover {
+ .button_group .add_form:hover {
     background-color: transparent;
     color: var(--akcent);
 }
 
 /* === Кнопка добавления задачи === */
-html[data-theme="dark"] .add_task {
+ .add_task {
     background-color: var(--akcent);
     color: #000;
 }
 
 /* === Кнопка обновления графика === */
-html[data-theme="dark"] .update_graphics {
+ .update_graphics {
     border-color: var(--text-main);
     color: var(--text-main);
 }
 
-html[data-theme="dark"] .update_graphics:hover {
+ .update_graphics:hover {
     background-color: var(--text-main);
     color: #000;
 }
 
 /* === Поиск друзей === */
-html[data-theme="dark"] .search_friend form .btn {
+ .search_friend form .btn {
     border-color: var(--akcent);
 }
 
-html[data-theme="dark"] .search_friend form .btn:hover {
+ .search_friend form .btn:hover {
     background: none;
     color: var(--akcent);
 }
 
 /* === Навигация календаря === */
-html[data-theme="dark"] .calendar_head button {
+ .calendar_head button {
    color: var(--text-main);
 }
 
 /* === Стрелки === */
-html[data-theme="dark"] .black_arrow {
+ .black_arrow {
    display: none;
 }
 
-html[data-theme="dark"] .white_arrow {
+ .white_arrow {
    display: block;
 }
 
 /* === Заголовки настроек === */
-html[data-theme="dark"] .settings_page section .title {
+ .settings_page section .title {
    color: var(--text-main);
 }
